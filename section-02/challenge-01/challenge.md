@@ -4,15 +4,15 @@ Abaixo temos alguns exercícios feitos em JavaScript. No entanto parte deles
 foram feitos pela metade e as soluções propostas possuem espaço para
 melhorias.
 
-Objetivos Gerais:
-1 - Traduza esses códigos de JavaScript para TypeScript
-2 - Entregue o que os enunciados pedem
-3 - Realize melhorias as quais você vê como necessárias! Fique de olhos
-abertos para:
+Objetivos Gerais: <br />
+1 - Traduza esses códigos de JavaScript para TypeScript <br />
+2 - Entregue o que os enunciados pedem <br />
+3 - Realize melhorias as quais você vê como necessárias! <br /> 
+Fique de olhos  abertos para:
   - "Tratamento" para erros
   - Variáveis desnecessárias
   - Checagem desnecessárias
-  - const para variáveis imutáveis
+  - const para variáveis imutáveis<br />
 1 - Abaixo temos um código em JavaScript. "Traduza-o" para TypeScript!
 ```js
 var dobro = function(valor) {
