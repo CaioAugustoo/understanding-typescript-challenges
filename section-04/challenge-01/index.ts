@@ -6,14 +6,18 @@ class Fila {
     return this.lista.push(name);
   }
 
-  public proximo() {
-    const nextNameInList = this.lista[0];
-    this.lista.splice(0, 1);
+  public proximo(name: string): string[] {
+    const nameInList = this.lista.indexOf(name) + 1;
+    const nextNameInList = this.lista.slice(nameInList);
+
+    if (!nextNameInList.length) {
+      throw new Error(`Não há nenhum nome após ${name}`);
+    }
 
     return nextNameInList;
   }
 
-  public imprimir() {
+  public imprimir(): void {
     console.log(this.lista);
   }
 }
@@ -22,5 +26,5 @@ const fila = new Fila();
 fila.entrar("Anna");
 fila.entrar("Caio");
 fila.entrar("Fer");
-fila.entrar("Michael");
 fila.imprimir();
+console.log(fila.proximo("Fer"));
